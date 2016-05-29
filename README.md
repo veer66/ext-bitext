@@ -1,7 +1,7 @@
 ext-bitext
 ==========
 
-ext-bitext is a tool for extracting translation pairs from a set of localisation files i.e. GNU gettext .po files
+ext-bitext is a tool for extracting translation pairs from a set of localisation files i.e. GNU gettext .po files, and XLIFF files.
 
 Prerequisite
 ------------
