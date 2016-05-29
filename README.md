@@ -13,6 +13,12 @@ Prerequisite
       gem install get_pomo
 
 
+3. xliffer
+
+
+      gem install xliffer
+
+
 Usage
 -----
 

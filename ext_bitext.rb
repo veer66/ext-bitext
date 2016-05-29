@@ -1,5 +1,6 @@
 require "find"
 require "get_pomo"
+require "xliffer"
 require "json"
 
 
@@ -21,6 +22,12 @@ def main
     if path =~ /\.po$/
       GetPomo::PoFile.parse(File.read(path), :parse_obsoletes => true).each do |tr|
         puts "#{tr.msgid.encode_tu} ||| #{tr.msgstr.encode_tu}"
+      end
+    elsif path =~ /\.xliff$/
+      XLIFFer::XLIFF.new(File.open(path)).files.each do |file|
+        file.strings.each do |s|
+          puts "#{s.source.encode_tu} ||| #{s.target.encode_tu}"
+        end
       end
     end
   end
