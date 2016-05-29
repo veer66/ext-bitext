@@ -1,7 +1,7 @@
-ext-po
-======
+ext-bitext
+==========
 
-ext-po is a tool for extracting translation pairs from a set of GNU gettext .po files to a single JSON file.
+ext-bitext is a tool for extracting translation pairs from a set of localisation files i.e. GNU gettext .po files
 
 Prerequisite
 ------------
@@ -9,10 +9,12 @@ Prerequisite
 1. Ruby
 2. get_pomo
 
-     gem install get_pomo
+
+      gem install get_pomo
 
 
 Usage
 -----
 
-ruby ext_po_dir_to_json <a path to a folder that contains .po>
+
+      ruby ext_bitext.rb <a path to a folder that contains .po>
